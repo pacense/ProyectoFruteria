@@ -6,6 +6,9 @@ import javax.swing.JTextField;
 import javax.swing.JButton;
 import javax.swing.SwingConstants;
 import java.awt.Font;
+import java.awt.GridLayout;
+import java.awt.Dimension;
+import java.awt.Component;
 
 public class BuscarCliente extends JPanel {
 	private JTextField textField;
@@ -22,56 +25,45 @@ public class BuscarCliente extends JPanel {
 		JPanel panel = new JPanel();
 		panel.setBounds(1, 0, 450, 300);
 		add(panel);
-		panel.setLayout(null);
+		panel.setLayout(new GridLayout(0, 1, 0, 0));
+		
+		JLabel lblBuscadorDeClientes = new JLabel("BUSCADOR DE CLIENTES");
+		lblBuscadorDeClientes.setHorizontalAlignment(SwingConstants.CENTER);
+		lblBuscadorDeClientes.setPreferredSize(new Dimension(500, 500));
+		panel.add(lblBuscadorDeClientes);
 		
 		JLabel lblNewLabel = new JLabel("Nombre");
-		lblNewLabel.setBounds(14, 99, 46, 14);
 		panel.add(lblNewLabel);
 		
 		textField = new JTextField();
-		textField.setBounds(70, 96, 359, 20);
 		panel.add(textField);
 		textField.setColumns(10);
 		
 		JLabel lblNewLabel_1 = new JLabel("Apellidos\r\n");
-		lblNewLabel_1.setBounds(10, 130, 46, 14);
 		panel.add(lblNewLabel_1);
 		
 		textField_1 = new JTextField();
-		textField_1.setBounds(70, 127, 359, 20);
 		panel.add(textField_1);
 		textField_1.setColumns(10);
 		
 		JLabel lblDni = new JLabel("DNI");
-		lblDni.setBounds(10, 161, 46, 14);
 		panel.add(lblDni);
 		
 		textField_2 = new JTextField();
-		textField_2.setBounds(70, 158, 359, 20);
 		panel.add(textField_2);
 		textField_2.setColumns(10);
 		
 		JLabel lblColorPelo = new JLabel("Color pelo");
-		lblColorPelo.setBounds(10, 192, 53, 14);
 		panel.add(lblColorPelo);
 		
 		textField_3 = new JTextField();
-		textField_3.setBounds(70, 189, 359, 20);
 		panel.add(textField_3);
 		textField_3.setColumns(10);
 		
 		JButton btnBuscar = new JButton("BUSCAR");
-		btnBuscar.setBounds(165, 220, 89, 23);
 		panel.add(btnBuscar);
 		
-		JLabel label = new JLabel("");
-		label.setBounds(40, 254, 359, 20);
-		panel.add(label);
-		
-		JLabel lblBuscadorDeClientes = new JLabel("BUSCADOR DE CLIENTES");
-		lblBuscadorDeClientes.setFont(new Font("Tahoma", Font.PLAIN, 20));
-		lblBuscadorDeClientes.setHorizontalAlignment(SwingConstants.CENTER);
-		lblBuscadorDeClientes.setBounds(55, 35, 344, 43);
-		panel.add(lblBuscadorDeClientes);
+		JLabel label_3 = new JLabel("");
+		panel.add(label_3);
 	}
 }
