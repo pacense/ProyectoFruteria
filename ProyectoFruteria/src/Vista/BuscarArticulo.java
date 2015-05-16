@@ -35,24 +35,23 @@ public class BuscarArticulo extends JPanel {
 	 */
 	public BuscarArticulo() {
 		GridBagLayout gridBagLayout = new GridBagLayout();
-		gridBagLayout.columnWidths = new int[]{470, 0, 0};
+		gridBagLayout.columnWidths = new int[]{470, 0};
 		gridBagLayout.rowHeights = new int[]{372, 0};
-		gridBagLayout.columnWeights = new double[]{1.0, 0.0, Double.MIN_VALUE};
+		gridBagLayout.columnWeights = new double[]{1.0, Double.MIN_VALUE};
 		gridBagLayout.rowWeights = new double[]{1.0, Double.MIN_VALUE};
 		setLayout(gridBagLayout);
 		
 		JPanel panel_1 = new JPanel();
 		panel_1.setFont(new Font("MV Boli", Font.PLAIN, 21));
 		GridBagConstraints gbc_panel_1 = new GridBagConstraints();
-		gbc_panel_1.insets = new Insets(0, 0, 0, 5);
 		gbc_panel_1.fill = GridBagConstraints.BOTH;
 		gbc_panel_1.gridx = 0;
 		gbc_panel_1.gridy = 0;
 		add(panel_1, gbc_panel_1);
 		GridBagLayout gbl_panel_1 = new GridBagLayout();
-		gbl_panel_1.columnWidths = new int[] {113, 120, 0, 0};
+		gbl_panel_1.columnWidths = new int[] {113, 120, 0};
 		gbl_panel_1.rowHeights = new int[] {49, 38, 90, 48, 84};
-		gbl_panel_1.columnWeights = new double[]{0.0, 0.0, 1.0, 1.0};
+		gbl_panel_1.columnWeights = new double[]{0.0, 0.0, 1.0};
 		gbl_panel_1.rowWeights = new double[]{1.0, 1.0, 0.0, 0.0, 0.0};
 		panel_1.setLayout(gbl_panel_1);
 		
@@ -60,7 +59,7 @@ public class BuscarArticulo extends JPanel {
 		lblNewLabel.setFont(new Font("MV Boli", Font.PLAIN, 21));
 		GridBagConstraints gbc_lblNewLabel = new GridBagConstraints();
 		gbc_lblNewLabel.gridwidth = 3;
-		gbc_lblNewLabel.insets = new Insets(0, 0, 5, 5);
+		gbc_lblNewLabel.insets = new Insets(0, 0, 5, 0);
 		gbc_lblNewLabel.gridx = 0;
 		gbc_lblNewLabel.gridy = 0;
 		panel_1.add(lblNewLabel, gbc_lblNewLabel);
@@ -105,7 +104,7 @@ public class BuscarArticulo extends JPanel {
 		btnNewButton.setFont(new Font("MV Boli", Font.PLAIN, 12));
 		GridBagConstraints gbc_btnNewButton = new GridBagConstraints();
 		gbc_btnNewButton.fill = GridBagConstraints.VERTICAL;
-		gbc_btnNewButton.insets = new Insets(0, 0, 5, 5);
+		gbc_btnNewButton.insets = new Insets(0, 0, 5, 0);
 		gbc_btnNewButton.gridx = 2;
 		gbc_btnNewButton.gridy = 2;
 		panel_1.add(btnNewButton, gbc_btnNewButton);
