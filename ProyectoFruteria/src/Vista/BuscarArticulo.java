@@ -29,7 +29,7 @@ public class BuscarArticulo extends JPanel {
 	private JTextField txtNombreProducto;
 	private JTextField txtPrecioProducto;
 	private JTextField txtDescripcion;
-	private JButton btnNewButton;
+	private JButton btnBuscarProducto;
 	private JLabel lblPrecioDelProducto;
 	private JLabel lblDescripcin;
 	private JLabel lblPvp;
@@ -60,7 +60,7 @@ public class BuscarArticulo extends JPanel {
 		gbl_panel_1.rowWeights = new double[]{0.0, 0.0, 0.0, 0.0, 0.0, 1.0};
 		panel_1.setLayout(gbl_panel_1);
 		
-		lblNewLabel = new JLabel("Panel de busqueda de productos");
+		lblNewLabel = new JLabel("Busqueda de productos");
 		lblNewLabel.setFont(new Font("MV Boli", Font.PLAIN, 21));
 		GridBagConstraints gbc_lblNewLabel = new GridBagConstraints();
 		gbc_lblNewLabel.gridwidth = 4;
@@ -126,8 +126,8 @@ public class BuscarArticulo extends JPanel {
 		panel_1.add(txtDescripcion, gbc_txtDescripcion);
 		txtDescripcion.setColumns(10);
 		
-		btnNewButton = new JButton("Buscar producto");
-		btnNewButton.addActionListener(new ActionListener() {
+		btnBuscarProducto = new JButton("Buscar producto");
+		btnBuscarProducto.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 			}
 		});
@@ -147,14 +147,14 @@ public class BuscarArticulo extends JPanel {
 		gbc_lblPVP.gridx = 2;
 		gbc_lblPVP.gridy = 4;
 		panel_1.add(lblPVP, gbc_lblPVP);
-		btnNewButton.setFont(new Font("MV Boli", Font.PLAIN, 12));
-		GridBagConstraints gbc_btnNewButton = new GridBagConstraints();
-		gbc_btnNewButton.anchor = GridBagConstraints.NORTH;
-		gbc_btnNewButton.insets = new Insets(0, 0, 0, 5);
-		gbc_btnNewButton.fill = GridBagConstraints.HORIZONTAL;
-		gbc_btnNewButton.gridx = 2;
-		gbc_btnNewButton.gridy = 5;
-		panel_1.add(btnNewButton, gbc_btnNewButton);
+		btnBuscarProducto.setFont(new Font("MV Boli", Font.PLAIN, 12));
+		GridBagConstraints gbc_btnBuscarProducto = new GridBagConstraints();
+		gbc_btnBuscarProducto.anchor = GridBagConstraints.NORTH;
+		gbc_btnBuscarProducto.insets = new Insets(0, 0, 0, 5);
+		gbc_btnBuscarProducto.fill = GridBagConstraints.HORIZONTAL;
+		gbc_btnBuscarProducto.gridx = 2;
+		gbc_btnBuscarProducto.gridy = 5;
+		panel_1.add(btnBuscarProducto, gbc_btnBuscarProducto);
 
 	}
 }

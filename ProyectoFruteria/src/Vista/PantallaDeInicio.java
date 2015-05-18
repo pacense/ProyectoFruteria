@@ -16,17 +16,17 @@ public class PantallaDeInicio extends JPanel {
 	 */
 	public PantallaDeInicio() {
 		GridBagLayout gridBagLayout = new GridBagLayout();
-		gridBagLayout.columnWidths = new int[]{0, 0, 0, 268, 0, 0, 0, 0};
-		gridBagLayout.rowHeights = new int[]{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
-		gridBagLayout.columnWeights = new double[]{0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, Double.MIN_VALUE};
-		gridBagLayout.rowWeights = new double[]{0.0, 1.0, 1.0, 0.0, 1.0, 0.0, 1.0, 0.0, 1.0, 0.0, Double.MIN_VALUE};
+		gridBagLayout.columnWidths = new int[]{0, 220, 12, 0};
+		gridBagLayout.rowHeights = new int[]{0, 0, 0, 0, 0, 0, 0};
+		gridBagLayout.columnWeights = new double[]{0.0, 1.0, 0.0, Double.MIN_VALUE};
+		gridBagLayout.rowWeights = new double[]{0.0, 0.0, 0.0, 0.0, 0.0, 0.0, Double.MIN_VALUE};
 		setLayout(gridBagLayout);
 		
 		JLabel label = new JLabel("Bienvenido a la Fruteria");
 		label.setFont(new Font("MV Boli", Font.BOLD, 20));
 		GridBagConstraints gbc_label = new GridBagConstraints();
 		gbc_label.insets = new Insets(0, 0, 5, 5);
-		gbc_label.gridx = 3;
+		gbc_label.gridx = 1;
 		gbc_label.gridy = 1;
 		add(label, gbc_label);
 		
@@ -36,31 +36,26 @@ public class PantallaDeInicio extends JPanel {
 		lblNewLabel.setHorizontalAlignment(SwingConstants.CENTER);
 		GridBagConstraints gbc_lblNewLabel = new GridBagConstraints();
 		gbc_lblNewLabel.insets = new Insets(0, 0, 5, 5);
-		gbc_lblNewLabel.anchor = GridBagConstraints.WEST;
-		gbc_lblNewLabel.gridx = 3;
+		gbc_lblNewLabel.gridx = 1;
 		gbc_lblNewLabel.gridy = 2;
 		add(lblNewLabel, gbc_lblNewLabel);
 		
-		JButton btnTendero = new JButton("Tendero");
-		GridBagConstraints gbc_btnTendero = new GridBagConstraints();
-		gbc_btnTendero.insets = new Insets(0, 0, 5, 5);
-		gbc_btnTendero.gridx = 3;
-		gbc_btnTendero.gridy = 4;
-		add(btnTendero, gbc_btnTendero);
+		JPanel panel = new JPanel();
+		GridBagConstraints gbc_panel = new GridBagConstraints();
+		gbc_panel.insets = new Insets(0, 0, 5, 5);
+		gbc_panel.fill = GridBagConstraints.BOTH;
+		gbc_panel.gridx = 1;
+		gbc_panel.gridy = 3;
+		add(panel, gbc_panel);
 		
-		JButton btnGestor = new JButton("Gestor");
-		GridBagConstraints gbc_btnGestor = new GridBagConstraints();
-		gbc_btnGestor.insets = new Insets(0, 0, 5, 5);
-		gbc_btnGestor.gridx = 3;
-		gbc_btnGestor.gridy = 6;
-		add(btnGestor, gbc_btnGestor);
+		JButton btnTendero = new JButton("Tendero");
+		panel.add(btnTendero);
 		
 		JButton btnNewButton_2 = new JButton("Frutero");
-		GridBagConstraints gbc_btnNewButton_2 = new GridBagConstraints();
-		gbc_btnNewButton_2.insets = new Insets(0, 0, 5, 5);
-		gbc_btnNewButton_2.gridx = 3;
-		gbc_btnNewButton_2.gridy = 8;
-		add(btnNewButton_2, gbc_btnNewButton_2);
+		panel.add(btnNewButton_2);
+		
+		JButton btnGestor = new JButton("Gestor");
+		panel.add(btnGestor);
 
 	}
 
