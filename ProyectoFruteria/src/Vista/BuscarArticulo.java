@@ -32,6 +32,8 @@ public class BuscarArticulo extends JPanel {
 	private JButton btnNewButton;
 	private JLabel lblPrecioDelProducto;
 	private JLabel lblDescripcin;
+	private JLabel lblPvp;
+	private JTextField textField_3;
 
 	/**
 	 * Create the panel.
@@ -53,18 +55,16 @@ public class BuscarArticulo extends JPanel {
 		add(panel_1, gbc_panel_1);
 		GridBagLayout gbl_panel_1 = new GridBagLayout();
 		gbl_panel_1.columnWidths = new int[] {113, 120, 0, 72};
-		gbl_panel_1.rowHeights = new int[] {46, 36, 33, 34, 69};
+		gbl_panel_1.rowHeights = new int[] {76, 52, 43, 34, 43, 0};
 		gbl_panel_1.columnWeights = new double[]{0.0, 0.0, 1.0, 0.0};
-		gbl_panel_1.rowWeights = new double[]{1.0, 1.0, 1.0, 1.0, 1.0};
+		gbl_panel_1.rowWeights = new double[]{0.0, 0.0, 0.0, 0.0, 0.0, 1.0};
 		panel_1.setLayout(gbl_panel_1);
 		
 		lblNewLabel = new JLabel("Panel de busqueda de productos");
 		lblNewLabel.setFont(new Font("MV Boli", Font.PLAIN, 21));
 		GridBagConstraints gbc_lblNewLabel = new GridBagConstraints();
-		gbc_lblNewLabel.anchor = GridBagConstraints.EAST;
-		gbc_lblNewLabel.fill = GridBagConstraints.VERTICAL;
-		gbc_lblNewLabel.gridwidth = 3;
-		gbc_lblNewLabel.insets = new Insets(0, 0, 5, 5);
+		gbc_lblNewLabel.gridwidth = 4;
+		gbc_lblNewLabel.insets = new Insets(0, 0, 5, 0);
 		gbc_lblNewLabel.gridx = 0;
 		gbc_lblNewLabel.gridy = 0;
 		panel_1.add(lblNewLabel, gbc_lblNewLabel);
@@ -80,8 +80,8 @@ public class BuscarArticulo extends JPanel {
 		
 		textField = new JTextField();
 		GridBagConstraints gbc_textField = new GridBagConstraints();
-		gbc_textField.fill = GridBagConstraints.HORIZONTAL;
 		gbc_textField.anchor = GridBagConstraints.NORTH;
+		gbc_textField.fill = GridBagConstraints.HORIZONTAL;
 		gbc_textField.insets = new Insets(0, 0, 5, 5);
 		gbc_textField.gridx = 2;
 		gbc_textField.gridy = 1;
@@ -130,12 +130,32 @@ public class BuscarArticulo extends JPanel {
 			public void actionPerformed(ActionEvent arg0) {
 			}
 		});
+		
+		lblPvp = new JLabel("PVP");
+		lblPvp.setFont(new Font("MV Boli", Font.PLAIN, 12));
+		GridBagConstraints gbc_lblPvp = new GridBagConstraints();
+		gbc_lblPvp.anchor = GridBagConstraints.EAST;
+		gbc_lblPvp.insets = new Insets(0, 0, 5, 5);
+		gbc_lblPvp.gridx = 1;
+		gbc_lblPvp.gridy = 4;
+		panel_1.add(lblPvp, gbc_lblPvp);
+		
+		textField_3 = new JTextField();
+		textField_3.setEditable(false);
+		GridBagConstraints gbc_textField_3 = new GridBagConstraints();
+		gbc_textField_3.insets = new Insets(0, 0, 5, 5);
+		gbc_textField_3.fill = GridBagConstraints.HORIZONTAL;
+		gbc_textField_3.gridx = 2;
+		gbc_textField_3.gridy = 4;
+		panel_1.add(textField_3, gbc_textField_3);
+		textField_3.setColumns(10);
 		btnNewButton.setFont(new Font("MV Boli", Font.PLAIN, 12));
 		GridBagConstraints gbc_btnNewButton = new GridBagConstraints();
+		gbc_btnNewButton.anchor = GridBagConstraints.NORTH;
 		gbc_btnNewButton.insets = new Insets(0, 0, 0, 5);
 		gbc_btnNewButton.fill = GridBagConstraints.HORIZONTAL;
 		gbc_btnNewButton.gridx = 2;
-		gbc_btnNewButton.gridy = 4;
+		gbc_btnNewButton.gridy = 5;
 		panel_1.add(btnNewButton, gbc_btnNewButton);
 
 	}
