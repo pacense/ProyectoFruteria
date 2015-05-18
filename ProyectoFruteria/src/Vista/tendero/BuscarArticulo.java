@@ -1,4 +1,4 @@
-package Vista;
+package Vista.tendero;
 
 import javax.swing.JPanel;
 import javax.swing.JLabel;
