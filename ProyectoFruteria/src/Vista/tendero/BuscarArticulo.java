@@ -54,14 +54,14 @@ public class BuscarArticulo extends JPanel {
 		gbc_panel_1.gridy = 0;
 		add(panel_1, gbc_panel_1);
 		GridBagLayout gbl_panel_1 = new GridBagLayout();
-		gbl_panel_1.columnWidths = new int[] {113, 120, 0, 72};
+		gbl_panel_1.columnWidths = new int[] {74, 120, 0, 72};
 		gbl_panel_1.rowHeights = new int[] {76, 52, 43, 34, 43, 0};
-		gbl_panel_1.columnWeights = new double[]{0.0, 0.0, 1.0, 0.0};
+		gbl_panel_1.columnWeights = new double[]{0.0, 0.0, 1.0, 1.0};
 		gbl_panel_1.rowWeights = new double[]{0.0, 0.0, 0.0, 0.0, 0.0, 1.0};
 		panel_1.setLayout(gbl_panel_1);
 		
 		lblNewLabel = new JLabel("Busqueda de productos");
-		lblNewLabel.setFont(new Font("MV Boli", Font.PLAIN, 21));
+		lblNewLabel.setFont(new Font("MV Boli", Font.BOLD, 21));
 		GridBagConstraints gbc_lblNewLabel = new GridBagConstraints();
 		gbc_lblNewLabel.gridwidth = 4;
 		gbc_lblNewLabel.insets = new Insets(0, 0, 5, 0);
@@ -70,7 +70,7 @@ public class BuscarArticulo extends JPanel {
 		panel_1.add(lblNewLabel, gbc_lblNewLabel);
 		
 		lblNewLabel_2 = new JLabel("Nombre del producto");
-		lblNewLabel_2.setFont(new Font("MV Boli", Font.PLAIN, 12));
+		lblNewLabel_2.setFont(new Font("MV Boli", Font.BOLD, 12));
 		GridBagConstraints gbc_lblNewLabel_2 = new GridBagConstraints();
 		gbc_lblNewLabel_2.anchor = GridBagConstraints.NORTH;
 		gbc_lblNewLabel_2.insets = new Insets(0, 0, 5, 5);
@@ -89,7 +89,7 @@ public class BuscarArticulo extends JPanel {
 		txtNombreProducto.setColumns(10);
 		
 		lblPrecioDelProducto = new JLabel("Precio del producto");
-		lblPrecioDelProducto.setFont(new Font("MV Boli", Font.PLAIN, 12));
+		lblPrecioDelProducto.setFont(new Font("MV Boli", Font.BOLD, 12));
 		GridBagConstraints gbc_lblPrecioDelProducto = new GridBagConstraints();
 		gbc_lblPrecioDelProducto.anchor = GridBagConstraints.NORTH;
 		gbc_lblPrecioDelProducto.insets = new Insets(0, 0, 5, 5);
@@ -108,7 +108,7 @@ public class BuscarArticulo extends JPanel {
 		txtPrecioProducto.setColumns(10);
 		
 		lblDescripcin = new JLabel("Descripci\u00F3n");
-		lblDescripcin.setFont(new Font("MV Boli", Font.PLAIN, 12));
+		lblDescripcin.setFont(new Font("MV Boli", Font.BOLD, 12));
 		GridBagConstraints gbc_lblDescripcin = new GridBagConstraints();
 		gbc_lblDescripcin.anchor = GridBagConstraints.NORTHEAST;
 		gbc_lblDescripcin.insets = new Insets(0, 0, 5, 5);
@@ -133,7 +133,7 @@ public class BuscarArticulo extends JPanel {
 		});
 		
 		lblPvp = new JLabel("PVP");
-		lblPvp.setFont(new Font("MV Boli", Font.PLAIN, 12));
+		lblPvp.setFont(new Font("MV Boli", Font.BOLD, 12));
 		GridBagConstraints gbc_lblPvp = new GridBagConstraints();
 		gbc_lblPvp.anchor = GridBagConstraints.EAST;
 		gbc_lblPvp.insets = new Insets(0, 0, 5, 5);
@@ -147,7 +147,7 @@ public class BuscarArticulo extends JPanel {
 		gbc_lblPVP.gridx = 2;
 		gbc_lblPVP.gridy = 4;
 		panel_1.add(lblPVP, gbc_lblPVP);
-		btnBuscarProducto.setFont(new Font("MV Boli", Font.PLAIN, 12));
+		btnBuscarProducto.setFont(new Font("MV Boli", Font.BOLD, 12));
 		GridBagConstraints gbc_btnBuscarProducto = new GridBagConstraints();
 		gbc_btnBuscarProducto.anchor = GridBagConstraints.NORTH;
 		gbc_btnBuscarProducto.insets = new Insets(0, 0, 0, 5);
